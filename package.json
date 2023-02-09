@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "android:greenmonkeys": "react-native run-android --variant 'greenMonkeysDebug' --appIdSuffix 'greenMonkeys'",
+    "android:purpleParrots": "react-native run-android --variant 'purpleParrotsDebug' --appIdSuffix 'purpleParrots'",
+    "ios:greenmonkeys": "npx react-native run-ios --scheme 'GreenMonkeys'",
+    "ios:purpleParrots": "npx react-native run-ios --scheme 'PurpleParrots'",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
