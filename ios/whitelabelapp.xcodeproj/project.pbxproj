@@ -16,8 +16,6 @@
 		41DF8AB02992BAA90090E21E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		41DF8AB22992BAA90090E21E /* libPods-whitelabelapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-whitelabelapp.a */; };
 		41DF8AB42992BAA90090E21E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		41DF8AC1299320F00090E21E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB61A68108700A75B9A /* Info.plist */; };
-		41DF8AC2299320F50090E21E /* GreenMonkeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DF8ABD2992BAA90090E21E /* GreenMonkeys.plist */; };
 		41DF8AC4299322A20090E21E /* WhiteLabelConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DF8AC3299322A20090E21E /* WhiteLabelConfig.m */; };
 		41DF8AC6299322D30090E21E /* WhiteLabelConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 41DF8AC5299322D30090E21E /* WhiteLabelConfig.m */; };
 		41DF8ACF299325290090E21E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41DF8ACE299325290090E21E /* Images.xcassets */; };
@@ -267,7 +265,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
@@ -310,7 +308,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41DF8AC1299320F00090E21E /* Info.plist in Resources */,
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				41DF8AA92992B8C10090E21E /* Images.xcassets in Resources */,
 			);
@@ -321,7 +318,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				41DF8ACF299325290090E21E /* Images.xcassets in Resources */,
-				41DF8AC2299320F50090E21E /* GreenMonkeys.plist in Resources */,
 				41DF8AB42992BAA90090E21E /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-whitelabelapp-whitelabelappTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -640,6 +637,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-whitelabelapp-whitelabelappTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = whitelabelappTests/Info.plist;
